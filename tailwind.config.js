@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  mode: 'jit',
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -8,4 +8,9 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  // These paths are just examples, customize them to match your project structure
+  purge: [
+    // './public/**/*.html',
+    './src/**/*.{js,jsx,ts,tsx,vue}',
+  ],
 }

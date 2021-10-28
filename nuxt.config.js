@@ -44,9 +44,16 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    // Disable a plugin by passing false as value
+    // 'postcss-url': false,
+    'postcss-nested': {},
+    'postcss-responsive-type': {},
+    'postcss-hexrgba': {}
   },
 
   router: {
     base: '/bte-lab/'
-  }
+  }, 
+
+  watch: ['~/assets/fonts/*.ttf', '~/assets/*.png', '~/components/*.vue', '~/pages/*.vue' ]
 }
