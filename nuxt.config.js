@@ -36,6 +36,8 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // nuxt svg loader
+    '@nuxtjs/svg',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -55,5 +57,14 @@ export default {
     base: '/bte-lab/'
   }, 
 
-  watch: ['~/assets/fonts/*.ttf', '~/assets/*.png', '~/components/*.vue', '~/pages/*.vue' ]
+  watch: ['~/assets/fonts/*.ttf', '~/assets/*.png', '~/components/*.vue', '~/pages/*.vue' ],
+
+  svg: {
+    vueSvgLoader: {
+      // vue-svg-loader options
+    },
+    svgSpriteLoader: {
+      // svg-sprite-loader options
+    }
+  }
 }
