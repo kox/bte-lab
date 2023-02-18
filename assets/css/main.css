@@ -21,3 +21,24 @@
   font-display: swap;
   src: url('~assets/fonts/OpenSans-Light.ttf') format('truetype');
 }
+
+.menu-sidebar {
+  display: inline;
+}
+
+.bg-grey {
+  background-color: #444;
+}
+
+.bg-grey-medium {
+  background-color: #6F7777;
+}
+
+.bg-grey-green {
+  background-color: #B6CACB;
+}
+
+.title-line {
+  width: 30px;
+  height: 3px;
+}
