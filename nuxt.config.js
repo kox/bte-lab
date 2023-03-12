@@ -39,12 +39,19 @@ export default {
     '@nuxtjs/tailwindcss',
     // nuxt svg loader
     '@nuxtjs/svg',
+    // nuxt image loader
+    '@nuxtjs/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     'nuxt-leaflet',
   ],
+
+  image: {
+    // Options
+    
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
