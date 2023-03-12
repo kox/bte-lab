@@ -22,6 +22,10 @@
   src: url('~assets/fonts/OpenSans-Light.ttf') format('truetype');
 }
 
+body {
+  background-color: black;
+}
+
 .menu-sidebar {
   display: inline;
 }

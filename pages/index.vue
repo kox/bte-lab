@@ -2,12 +2,21 @@
 <template>
   <div class="flex flex-col w-full bg-back">
     <Nav />
+
     <MainBanner />
-    <Team />
+    
+    <About />
+    
     <HospitalBanner />
-    <UnderContruction />
+
+    <ResearchMain />
+
+    <Team />
+
     <ContactForm />
+
     <Map />
+    
     <Footer />
   </div>
 </template>

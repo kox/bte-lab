@@ -1,48 +1,42 @@
 <template>
-    <div class="flex flex-col">
-        <div class="w-full h-full">
-            <div id="map" class="w-full h-full"></div>
+    <div class="h-screen w-full flex justify-center items-center bg-white">
+        <div class="container h-4/5 mx-4 lg:mx-0 w-full">
+            <no-ssr>
+                <l-map :zoom="zoom" :center="center">
+                    <l-tile-layer :url="url" />
+                    <l-marker :lat-lng="marker" />
+                    <l-icon-default :image-path="path" />
+                </l-map>
+            </no-ssr>
         </div>
     </div>
 </template>
-
+  
 <script>
 export default {
-    name: "Map",
-    mounted() {
-        this.initMap();
-    },
-    methods: {
-        async initMap() {
-            const location = await this.getLocation('Av. de les Tres Creus, 2, 46014 València, Valencia, Spain');
-            const map = new google.maps.Map(document.getElementById('map'), {
-                center: location,
-                zoom: 15
-            });
-            new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        },
-        getLocation(address) {
-            return new Promise((resolve, reject) => {
-                const geocoder = new google.maps.Geocoder();
-                geocoder.geocode({ address: address }, (results, status) => {
-                    if (status === 'OK') {
-                        resolve(results[0].geometry.location);
-                    } else {
-                        reject(new Error('Geocode was not successful for the following reason: ' + status));
-                    }
-                });
-            });
-        }
-    }
-};
-</script>
-
-<style>
-#map {
-    width: 100%;
-    height: 100%;
+    name: "Mapa",
 }
-</style>
+</script>
+  
+<script>
+let Vue2Leaflet = {}
+if (process.client) Vue2Leaflet = require('vue2-leaflet')
+
+export default {
+    name: "Map",
+        components: {
+            'l-map': Vue2Leaflet.LMap,
+            'l-tile-layer': Vue2Leaflet.LTileLayer,
+            'l-marker': Vue2Leaflet.LMarker,
+        },
+data() {
+            return {
+                zoom: 16,
+                path: '/images/',
+                center: [39.4681277, -0.4081521],
+                url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+                marker: (process.client)?L.latLng(39.4681277, -0.4081521):null,
+            }
+        }
+}
+</script>

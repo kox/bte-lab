@@ -1,12 +1,17 @@
 <template>
-    <div class="flex flex-col lg:flex-row">
-        <div class="w-full lg:w-1/2 p-4">
-            <h2>Contact us</h2>
-            <p>Av. de les Tres Creus, 2, 46014 València, Valencia, Spain</p>
-            <p>btelabvalencia@gmail.com</p>
-            <p>963 131 893</p>
+    <div class="w-full flex flex-col bg-white pt-72 pb-20">
+        <div class="container mx-auto justify-center">
+            <div class="flex flex-col text-center text-black">
+                <h2 class="text-6xl md:text-7xl font-semibold pb-10 md:pb-12 tracking-tight justify-center">Contact us</h2>
+                
+                <p class="text-2xl">Av. de les Tres Creus, 2, 46014 València, Valencia, Spain</p>
+                <p class="text-2xl"><a href="mailto:example@btelabvalencia@gmail.com">btelabvalencia@gmail.com</a></p>
+                <p class="text-2xl"><a href="tel:+963131893">963 131 893</a></p>
+            </div>
         </div>
-        <div class="w-full lg:w-1/2 p-4">
+        <!-- <div class="w-full lg:w-1/2 p-4">
+        </div> -->
+       <!--  <div class="w-full lg:w-1/2 p-4">
             <form>
                 <div>
                     <label for="name">Name:</label>
@@ -26,7 +31,7 @@
                 </div>
                 <button @click.prevent="submitForm">Submit</button>
             </form>
-        </div>
+        </div> -->
     </div>
 
 </template>

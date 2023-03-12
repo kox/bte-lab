@@ -1,47 +1,55 @@
 <template>
-    <div class="flex flex-col bg-black pt-28 pb-28">
-        <div class="pb-10">
-            <p class="w-full text-white sm:leading-7 md:text-5xl text-center">
-                The BTELab is a multidisciplinary team based at the Research Foundation of the General Hospital in
-                Valencia, Spain. Created in 2020 and directed by Carmen Escobedo-Lucea, it is focues on research and
-                devlopment in the field of Biomedical and Tissue Engineering.
-            </p>
-            <p class="w-full text-white sm:leading-7 md:text-5xl text-center">
-                The BTELab is a multidisciplinary team based at the Research Foundation of the General Hospital in
-                Valencia, Spain. Created in 2020 and directed by Carmen Escobedo-Lucea, it is focues on research and
-                devlopment in the field of Biomedical and Tissue Engineering.
-            </p>
+    <div class="w-full bg-black pb-10">
+        <div class="container mx-auto ">
+            <div class="carousel-container container overflow-hidden">
+                <slick class="relative" ref="slick" :options="slickOptions">
+                    <img src="~/assets/hospital1600px.png" alt="Hospital General">
+                    <img src="~/assets/fotogrupo-1600px.png" alt="BTE Lab team photo">
+                    <img src="~/assets/valencia1600px.png" alt="Science Museum in Valencia">
 
+                </slick>
+            </div>
         </div>
-        <VueSlickCarousel v-bind="carrousel">
-        <!-- <VueSlickCarousel :arrows="true" :dots="true" :speed="500"> -->
-      <div><img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="block w-full"
-                        alt="Wild Landscape" /></div>
-      <div><img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="block w-full" alt="Camera" /></div>
-      <div><img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="block w-full"
-                        alt="Exotic Fruits" /></div>
-    </VueSlickCarousel>
-    </div>
+</div>
 </template>
+
+<style scoped>
+.carousel-container-mobile {
+    height: 600px;
+}
+
+.slick-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: auto;
+}
+</style>
+
+
 <script>
- import VueSlickCarousel from 'vue-slick-carousel'
- import 'vue-slick-carousel/dist/vue-slick-carousel.css'
- import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+import Slick from 'vue-slick';
+import 'slick-carousel/slick/slick.css';
+
 
 export default {
     name: "HospitalBanner",
-    components: { VueSlickCarousel },
+    components: { Slick },
     data() {
         return {
-            carrousel: {
-                arrows: true,
-                dots: true,
-                speed: 500,
+            slickOptions: {
+                prevArrow: null,
+                nextArrow: null,
                 autoplay: true,
-                cssEase: 'ease',
+                slidesToShow: 1,
+                autoplaySpeed: 1000,
+                adaptiveHeight: true,
+                dots: false,
+                speed: 500,
                 fade: true,
-            }
-        }
+                cssEase: 'linear',
+            },
+        };
     }
 };
 </script>
