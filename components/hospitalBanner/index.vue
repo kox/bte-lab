@@ -3,9 +3,48 @@
         <div class="container mx-auto ">
             <div class="carousel-container container overflow-hidden">
                 <slick class="relative" ref="slick" :options="slickOptions">
-                    <img src="~/assets/hospital1600px.png" alt="Hospital General">
+
+                    <nuxt-img
+                        format="webp"
+                        src="/hospital1600px.png"
+                        alt="Hospital General Universitario de Valencia"
+                        fetchpriority="low"
+                        width="1600"
+                        height="800"
+                        blur-up
+                        quality="80"
+                        style="object-fit: scale-down;"
+                         />
+                    
+                    <nuxt-img
+                        format="webp"
+                        src="/fotogrupo-1600px.png"
+                        alt="BTE Lab team photo"
+                        fetchpriority="low" 
+                        width="1600"
+                        height="800"
+                        blur-up
+                        quality="80"
+                        style="object-fit: contain;"
+                        />
+                        
+                    <nuxt-img
+                        format="webp"
+                        src="/valencia1600px.png"
+                        alt="Science Museum in Valencia"
+                        fetchpriority="low" 
+                        width="1600"
+                        height="800"
+                        blur-up
+                        quality="80"
+                        style="object-fit: contain;"
+                        />
+                        
+                    <!--
+                        class="w-full h-auto object-cover rounded-lg transition-transform duration-500 transform-gpu hover:scale-110"
+                         <img src="~/assets/hospital1600px.png" alt="Hospital General">
                     <img src="~/assets/fotogrupo-1600px.png" alt="BTE Lab team photo">
-                    <img src="~/assets/valencia1600px.png" alt="Science Museum in Valencia">
+                    <img src="~/assets/valencia1600px.png" alt="Science Museum in Valencia"> -->
 
                 </slick>
             </div>

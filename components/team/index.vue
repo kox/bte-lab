@@ -9,8 +9,16 @@
                 <div class="grid  grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
                     <div v-for="(image, index) in team" :key="index" class="relative">
                         <a :href="image.link" :title="image.name" @click.prevent="handleClick($event, image)">
-                            <img :src="image.url"
-                                class="w-full h-auto object-cover rounded-lg transition-transform duration-500 transform-gpu hover:scale-110" />
+
+                            <nuxt-img
+                                class="w-full h-auto object-cover rounded-lg transition-transform duration-500 transform-gpu hover:scale-110"
+                                format="webp"
+                                :src="image.url"
+                                :alt="image.name"
+                                fetchpriority="high" />
+
+                            <!-- <img :src="image.url"
+                                class="w-full h-auto object-cover rounded-lg transition-transform duration-500 transform-gpu hover:scale-110" /> -->
                             <div class="absolute bottom-10 left-4 inset-0 flex items-end justify-left ">
                                 <div class="bg-gray-900 bg-opacity-50 p-4 rounded-lg text-xl text-black">
                                     <p class="text-gray-100">{{ image.name }}</p>
@@ -31,8 +39,16 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
                     <div v-for="(image, index) in PhDCandidates" :key="index" class="relative">
                         <a :href="image.link" :title="image.name" @click.prevent="handleClick($event, image)">
-                            <img :src="image.url"
-                                class="w-full h-auto object-cover rounded-lg transition-transform duration-500 transform-gpu hover:scale-110" />
+
+                            <nuxt-img
+                                class="w-full h-auto object-cover rounded-lg transition-transform duration-500 transform-gpu hover:scale-110"
+                                format="webp"
+                                :src="image.url"
+                                :alt="image.name"
+                                fetchpriority="high" />
+
+                            <!-- <img :src="image.url"
+                                class="w-full h-auto object-cover rounded-lg transition-transform duration-500 transform-gpu hover:scale-110" /> -->
                             <div class="absolute bottom-10 left-4 inset-0 flex items-end justify-left ">
                                 <div class="bg-gray-900 bg-opacity-50 p-4 rounded-lg text-xl text-black">
                                     <p class="text-gray-100">{{ image.name }}</p>
@@ -53,8 +69,18 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
                     <div v-for="(image, index) in Graduates" :key="index" class="relative">
                         <a :href="image.link" :title="image.name" @click.prevent="handleClick($event, image)">
-                            <img :src="image.url"
-                                class="w-full h-auto object-cover rounded-lg transition-transform duration-500 transform-gpu hover:scale-110" />
+
+                            <nuxt-img
+                                class="w-full h-auto object-cover rounded-lg transition-transform duration-500 transform-gpu hover:scale-110"
+                                format="webp"
+                                :src="image.url"
+                                :alt="image.name"
+                                fetchpriority="high" />
+
+                            <!-- <img :src="image.url"
+                                class="w-full h-auto object-cover rounded-lg transition-transform duration-500 transform-gpu hover:scale-110" /> -->
+                            <!-- <img :src="image.url"
+                                class="w-full h-auto object-cover rounded-lg transition-transform duration-500 transform-gpu hover:scale-110" /> -->
                             <div class="absolute bottom-10 left-4 inset-0 flex items-end justify-left ">
                                 <div class="bg-gray-900 bg-opacity-50 p-4 rounded-lg text-xl text-black">
                                     <p class="text-gray-100">{{ image.name }}</p>
@@ -74,8 +100,16 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
                     <div v-for="(image, index) in collaborators" :key="index" class="relative">
                         <a :href="image.link" :title="image.name" @click.prevent="handleClick($event, image)">
-                            <img :src="image.url"
-                                class="w-full h-auto object-cover rounded-lg transition-transform duration-500 transform-gpu hover:scale-110" />
+
+                            <nuxt-img
+                                class="w-full h-auto object-cover rounded-lg transition-transform duration-500 transform-gpu hover:scale-110"
+                                format="webp"
+                                :src="image.url"
+                                :alt="image.name"
+                                fetchpriority="high" />
+
+                            <!-- <img :src="image.url"
+                                class="w-full h-auto object-cover rounded-lg transition-transform duration-500 transform-gpu hover:scale-110" /> -->
                             <div class="absolute bottom-10 left-4 inset-0 flex items-end justify-left ">
                                 <div class="bg-gray-900 bg-opacity-50 p-4 rounded-lg text-xl text-black">
                                     <p class="text-gray-100">{{ image.name }}</p>
@@ -106,15 +140,14 @@
 </style>
 
 <script>
-const male = require('@/assets/ICON-MALE.png');
-const female = require('@/assets/ICON-FEMALE.png');
+const maleStatic = '/ICON-MALE.png';
+const femaleStatic = '/ICON-FEMALE.png';
 export default {
     name: "Team",
     methods: {
         handleClick(event, image) {
             event.preventDefault();
 
-            console.log(image.link)
             if (!image.link.length) {
                 return; // do nothing if the URL is empty
             } else {
@@ -128,124 +161,124 @@ export default {
                 name: "Carmen Escobedo Lucea",
                 title: "PhD, Biologist",
                 position: "PI BTELab",
-                url: require('@/assets/CARMEN.png'),
+                url: '/CARMEN.png',
                 link: "https://www.linkedin.com/in/carmen-escobedo-lucea-75672190/"
             }, {
                 name: "Andrés Sanz García",
                 title: "PhD",
                 position: "Engineer Senior Researcher",
-                url: require('@/assets/ANDRES.png'),
+                url: '/ANDRES.png',
                 link: "https://www.linkedin.com/in/andres-sanz-ba079b29",
             }, {
                 name: "Matteo Perra",
                 title: "PhD",
                 position: "Pharmacy Postdoctoral Researcher",
-                url: male,
+                url: maleStatic,
                 link: "https://www.linkedin.com/in/matteo-perra-b3a457241",
             }, {
                 name: "Néstor Villalba Rojas",
                 title: "MSC Biotechnology",
                 position: "Lab Manager",
-                url: require('@/assets/NESTOR.png'),
+                url: '/NESTOR.png',
                 link: "https://www.linkedin.com/in/nestorvillalbarojas",
             }, {
                 name: "Neus Alemany Ortolá",
                 title: "MSC Biotechnology",
                 position: "Lab Technician",
-                url: male,
+                url: maleStatic,
                 link: "https://www.linkedin.com/in/neusalemanyortola",
             }, {
                 name: "Cristina Andrés Carbonell",
                 title: "Anatomy & Pathology",
                 position: "Lab Technician",
-                url: female,
+                url: femaleStatic,
                 link: "",
             },],
             PhDCandidates: [{
                 name: "Armando Gonzalez",
                 title: "MSC",
                 position: "PhD candidate",
-                url: male,
+                url: maleStatic,
                 link: "https://www.linkedin.com/in/armando-gonzález-muñoz-a8b1b6165",
             }, {
                 name: "Julia Gonzalez Cantó",
                 title: "MSC",
                 position: "PhD candidate",
-                url: female,
+                url: femaleStatic,
                 link: "https://www.linkedin.com/in/julia-gonzález-cantó-b1a29b228",
             }, {
                 name: "Pepo Garcia Moreno",
                 title: "MD",
                 position: "PhD candidate",
-                url: male,
+                url: maleStatic,
                 link: "https://www.linkedin.com/in/pepo-garcía-moreno-0ba032248",
             }, {
                 name: "Jose Luis de Pablo Franco",
                 title: "MSC",
                 position: "PhD candidate",
-                url: require('@/assets/JOSE-LUIS.png'),
+                url: '/JOSE-LUIS.png',
                 link: "https://reproduccionart.com/jose-luis-de-pablo/",
             },],
             Graduates: [{
                 name: "Sara Mirabet Torres",
                 title: "MSC",
                 position: "Biologist",
-                url: female,
+                url: femaleStatic,
                 link: "https://www.linkedin.com/in/saramirabettorres",
             }, {
                 name: "Alejandro López Cuquerella",
                 title: "MSC",
                 position: "Biomedical Engineer",
-                url: require('@/assets/ALEX.png'),
+                url: '/ALEX.png',
                 link: "https://www.linkedin.com/in/alejandro-lópez-cuquerella",
             }, {
                 name: "Andrea Sanchez Villena",
                 title: "MSC",
                 position: "Industrial Design Engineer",
-                url: female,
+                url: femaleStatic,
                 link: "https://www.linkedin.com/in/andrea-sánchez-villena-035606156",
             }, {
                 name: "Francesca Flore",
                 title: "MSC",
                 position: "Biomedical Engineer",
-                url: female,
+                url: femaleStatic,
                 link: "https://www.linkedin.com/in/francesca-flore-46a01a90",
             }, {
                 name: "Andrea Martinez Vela",
                 title: "MSC",
                 position: "Chemist",
-                url: female,
+                url: femaleStatic,
                 link: "https://www.linkedin.com/in/andrea-martínez-vela-66251b167",
             }, {
                 name: "Anuar Gimenez El Amrani",
                 title: "",
                 position: "Mechanical and Electrical Engineer",
-                url: require('@/assets/ANUAR.png'),
+                url: '/ANUAR.png',
                 link: "https://www.linkedin.com/in/anuargimenez",
             }, {
                 name: "Borja Goméz Colmenar",
                 title: "MSC",
                 position: "",
-                url: male,
+                url: maleStatic,
                 link: "https://www.linkedin.com/in/borja-gómez-colmenar-3078b111a",
             }],
             collaborators: [{
                 name: "Vicente Mirabet",
                 title: "PhD",
                 position: "Biologist",
-                url: male,
+                url: maleStatic,
                 link: "https://www.linkedin.com/in/vicente-mirabet-41790662",
             }, {
                 name: "David Peris Puchol",
                 title: " M.D.Ph.D.",
                 position: "Biotechnologist and Orthopedic Surgeon",
-                url: male,
+                url: maleStatic,
                 link: "https://www.linkedin.com/in/david-peris-puchol-4710272a",
             }, {
                 name: "Isabel Moreno",
                 title: "MD Ph.D",
                 position: "Plastic Surgeon",
-                url: female,
+                url: femaleStatic,
                 link: "https://www.linkedin.com/in/isabel-moreno-gallent-02182342",
             }]
         }

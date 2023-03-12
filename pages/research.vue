@@ -1,19 +1,19 @@
 
 <template>
-    <div class="flex flex-col w-full bg-back">
-      <Nav />
+  <div class="flex flex-col w-full bg-back">
+    <Nav />
 
-      <Research />
+    <Research />
 
-      <Contact />
-      
-      <Footer />
-    </div>
-  </template>
+    <ContactForm />
+
+    <Footer />
+  </div>
+</template>
   
-  <script lang="ts">
-  import Vue from "vue";
-  
-  export default Vue.extend({});
-  </script>
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({});
+</script>
   

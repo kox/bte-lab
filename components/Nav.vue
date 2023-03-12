@@ -5,21 +5,21 @@
       <div class="flex-1 grid grid-cols-3 h-6 text-white">
         <div class="pt-4">
           <!-- <div class="invisible md:visible">logo lg</div> -->
-          <a title="BTELAB" href="/" target="_self">
-            <nuxt-image
+          <a title="Escobedo Lucea Biomaterial and Tissue Engineering Lab" href="/" target="_self">
+            <nuxt-img
               class="invisible xl:visible w-64 h-auto"
               format="webp"
-              src="~assets/logo_blanco.png"
+              src="/logo_blanco.png"
               alt="Escobedo Lucea Biomaterial and Tissue Engineering Lab logo 2" />
           </a>
         </div>
         <div class="flex flex-row justify-self-center pt-2">
           <!-- <div class="visible md:invisible">logo tablet</div> -->
-          <a title="BTELAB" href="/" target="_self">
-            <nuxt-img 
+          <a title="Escobedo Lucea Biomaterial and Tissue Engineering Lab" href="/" target="_self">
+            <nuxt-img
               class="visible xl:invisible w-64 h-auto"
               format="webp"
-              src="~assets/logo_blanco.png"
+              src="/logo_blanco.png"
               alt="Escobedo Lucea Biomaterial and Tissue Engineering Lab logo" />
             <!-- <img class="visible xl:invisible w-64 h-auto" src="~assets/logo_blanco.png"
               alt="Escobedo Lucea Biomaterial and Tissue Engineering Lab logo" /> -->
@@ -40,38 +40,50 @@
             </div>
 
             <div class="xl:hidden w-30 ml-4" v-show="showMenu">
-              <a href="/"
+              <a title="Home" href="/"
                 class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Home</a>
-              <a href="/#about"
+              <a title="About Section" href="/#about"
                 class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">About</a>
-              <a href="/#team"
+              <a title="Team Section" href="/#team"
                 class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Team</a>
-              <a href="/research"
+              <a title="Research Section" href="/research"
                 class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Research</a>
-              <a href="/projects"
+              <a title="Projects Section" href="/projects"
                 class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Projects</a>
-              <a href="/awards"
+              <a title="Adwards Section" href="/awards"
                 class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Adwards</a>
-              <a href="/publications"
+              <a title="Publications Section" href="/publications"
                 class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Publications</a>
-              <a href="https://www.google.com/maps?cid=3154699187674670345" target="_blank"
-                class="flex justify-center px-2 py-2 bg-black text-black border-b-2 border-black text-center align-middle ">
-                <img class="w-6 h-6 bg-black" alt="Google Map" fetchpriority="high" src="~assets/map.webp" />
+              <a title="Google Maps Link" href="https://www.google.com/maps?cid=3154699187674670345" target="_blank" class="flex justify-center px-2 py-2 bg-black text-black border-b-2 border-black text-center align-middle ">
+                <nuxt-img
+                  class="w-6 h-6 bg-black"
+                  format="webp"
+                  src="/map.webp"
+                  alt="Google Map Link"
+                  fetchpriority="high" />
+                <!-- <img class="w-6 h-6 bg-black" alt="Google Map" fetchpriority="high" src="~assets/map.webp" /> -->
               </a>
             </div>
           </div>
 
-          <div class="hidden xl:flex space-x-3">
-            <div><a href="/">Home</a></div>
-            <div><a href="/#about">About</a></div>
-            <div><a href="/#team">Team</a></div>
-            <div><a href="/research">Research</a></div>
-            <div><a href="/projects">Projects</a></div>
-            <div><a href="/awards">Awards</a></div>
-            <div><a href="/publications">Publications</a></div>
-            <div>
-              <a href="https://www.google.com/maps?cid=3154699187674670345" target="_blank">
-                <nuxt-img class="w-6 h-6 bg-cover" alt="Google Map" fetchpriority="high" src="~assets/map.webp" />
+          <div class="hidden xl:flex space-x-3 text-xl">
+            <div><a title="Home" href="/">Home</a></div>
+            <div><a title="About Section" href="/#about">About</a></div>
+            <div><a title="Team Section" href="/#team">Team</a></div>
+            <div><a title="Research Section" href="/research">Research</a></div>
+            <div><a title="Projects Section" href="/projects">Projects</a></div>
+            <div><a title="Adwards Section" href="/awards">Awards</a></div>
+            <div><a title="Publications Section" href="/publications">Publications</a></div>
+            <div class="w-10">
+              <a title="Google Maps Link" href="https://www.google.com/maps?cid=3154699187674670345" target="_blank">
+                <nuxt-img
+                  class="w-6 h-6 bg-cover"
+                  format="webp"
+                  src="/map.webp"
+                  alt="Google Map Link"
+                  fetchpriority="high" />
+
+                <!-- <nuxt-img class="w-6 h-6 bg-cover" alt="Google Map" fetchpriority="high" src="~assets/map.webp" /> -->
                 <!-- <img class="w-6 h-6 bg-cover" alt="Google Map" fetchpriority="high" src="~assets/map.webp" /> -->
               </a>
             </div>
@@ -85,6 +97,9 @@
 <script>
 export default {
   name: "Nav",
+  /* components: {
+    'nuxt-image': '@nuxt/image',
+  }, */
   data() {
     return {
       showMenu: false,

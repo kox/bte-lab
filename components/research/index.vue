@@ -4,8 +4,30 @@
         <div class="w-full flex flex-col bg-black pt-28 pb-28">
             <div class="container mx-auto visible xl:hidden px-5">
                 <div class="w-full flex justify-center bg-grey">
-                    <img class="object-contain" alt="Microfabrication 1" :src="micro1" />
-                    <img class="object-contain" alt="Microfabrication 2" :src="micro2" />
+                    <nuxt-img
+                        format="webp"
+                        class="object-contain"
+                        :src="micro1"
+                        alt="Microfabrication 1"
+                        fetchpriority="low"
+                        width="160"
+                        height="134"
+                        blur-up
+                        quality="80"
+                         />
+
+                    <nuxt-img
+                        format="webp"
+                        class="object-contain"
+                        :src="micro2"
+                        alt="Microfabrication 2"
+                        fetchpriority="low"
+                        width="139"
+                        height="211"
+                        blur-up
+                        quality="80"
+                        style="object-fit: scale-down;"
+                         />
                 </div>
 
                 <div class="w-full bg-white px-20 py-32 text-center">
@@ -18,11 +40,29 @@
                 <div class="w-1/3 bg-grey h-auto">
                     <div class="grid grid-cols-1 place-content-between h-full pt-36 pb-16">
                         <div class="flex justify-center">
-                            <img class="flex justify-center" alt="Microfabrication 1" :src="micro1" />
+                            <nuxt-img
+                                format="webp"
+                                class="object-contain"
+                                :src="micro1"
+                                alt="Microfabrication 1"
+                                fetchpriority="low"
+                                width="160"
+                                height="134"
+                                blur-up
+                                quality="80" />
                         </div>
 
                         <div class="flex justify-center">
-                            <img class="flex justify-center" alt="Microfabrication 2" :src="micro2" />
+                            <nuxt-img
+                                format="webp"
+                                class="object-contain"
+                                :src="micro2"
+                                alt="Microfabrication 2"
+                                fetchpriority="low"
+                                width="139"
+                                height="211"
+                                blur-up
+                                quality="80" />
                         </div>
                     </div>
                 </div>
@@ -36,14 +76,48 @@
 
         <div class="w-full flex flex-col bg-black pt-28 pb-28">
             <div class="container mx-auto visible xl:hidden px-5">
-                <div class="w-full flex bg-grey content-center">
-                    <img class="object-contain" alt="Manufacturing 1" :src="manufacturing1" width="150" height="auto" />
-                    <img class="object-contain" alt="Manufacturing 2" :src="manufacturing2" />
+                <div class="w-full flex justify-center bg-grey">
+                    <nuxt-img
+                        format="webp"
+                        class="object-contain"
+                        :src="manufacturing1"
+                        alt="Manufacturing 1"
+                        fetchpriority="low"
+                        width="216"
+                        height="144"
+                        blur-up
+                        quality="80"
+                         />
+
+                    <nuxt-img
+                        format="webp"
+                        class="object-contain"
+                        :src="manufacturing2"
+                        alt="Manufacturing 2"
+                        fetchpriority="low"
+                        width="176"
+                        height="186"
+                        blur-up
+                        quality="80"
+                        style="object-fit: scale-down;"
+                         />
+
+                    <nuxt-img
+                        format="webp"
+                        class="object-contain"
+                        :src="manufacturing3"
+                        alt="Manufacturing 3"
+                        fetchpriority="low"
+                        width="180"
+                        height="145"
+                        blur-up
+                        quality="80"
+                        style="object-fit: scale-down;"
+                         />
                 </div>
 
                 <div class="w-full bg-white px-20 py-32 text-center">
-                    <h2 class="font-serif lg:text-7xl md:text-5xl text-4xl mb-16">Additive manufacturing and 3D bioprinting
-                    </h2>
+                    <h2 class="font-serif lg:text-7xl md:text-5xl text-4xl mb-16">Additive manufacturing and 3D bioprinting</h2>
                     <p class="text-xl">3D bioprinting is an emerging technology that can spatially control the construction
                         process of engineered tissues. The BTELab focuses on controlling the printed constructs'
                         architecture, morphology, and biological properties to generate 3D platforms that reproduce their
@@ -77,26 +151,55 @@
 
             <div class="container hidden mx-auto xl:flex">
                 <div class="w-1/3 bg-grey h-auto">
-                    <div class="flex flex-wrap justify-center content-evenly h-full pt-36 pb-16">
-                        <div class="w-full mx-auto">
-                            <img  alt="Manufacturing 1" :src="manufacturing1" />
+                    <div class="grid grid-cols-1 place-content-between h-full pt-36 pb-16">
+                        <div class="flex justify-center">
+                            <nuxt-img
+                                format="webp"
+                                class="object-contain"
+                                :src="manufacturing1"
+                                alt="Manufacturing 1"
+                                fetchpriority="low"
+                                width="216"
+                                height="144"
+                                blur-up
+                                quality="80"
+                                />
                         </div>
 
-                        <div class="w-full justify-center">
-                            <img class="flex justify-center" alt="Manufacturing 2" :src="manufacturing2" />
+                        <div class="flex justify-center">
+                            <nuxt-img
+                            format="webp"
+                            class="object-contain"
+                            :src="manufacturing2"
+                            alt="Manufacturing 2"
+                            fetchpriority="low"
+                            width="176"
+                            height="186"
+                            blur-up
+                            quality="80"
+                            style="object-fit: scale-down;"
+                            />
+                        </div>
+
+                        <div class="flex justify-center">
+                            <nuxt-img
+                                format="webp"
+                                class="object-contain"
+                                :src="manufacturing3"
+                                alt="Manufacturing 3"
+                                fetchpriority="low"
+                                width="180"
+                                height="145"
+                                blur-up
+                                quality="80"
+                                style="object-fit: scale-down;"
+                                />
                         </div>
                     </div>
                 </div>
 
                 <div class="w-2/3 bg-white px-20 py-32 text-center">
-                    <div class="w-full flex justify-center bg-grey">
-                    <img class="object-contain" alt="Manufacturing 1" :src="manufacturing1" />
-                    <img class="object-contain" alt="Manufacturing 2" :src="manufacturing2" />
-                </div>
-
-                <div class="w-full bg-white px-20 py-32 text-center">
-                    <h2 class="font-serif lg:text-7xl md:text-5xl text-4xl mb-16">Additive manufacturing and 3D bioprinting
-                    </h2>
+                    <h2 class="font-serif lg:text-7xl md:text-5xl text-4xl mb-16">Additive manufacturing and 3D bioprinting</h2>
                     <p class="text-xl">3D bioprinting is an emerging technology that can spatially control the construction
                         process of engineered tissues. The BTELab focuses on controlling the printed constructs'
                         architecture, morphology, and biological properties to generate 3D platforms that reproduce their
@@ -126,17 +229,142 @@
                         whole complexity and anatomical structure of the human organs and tissues from the medical images.
                     </p>
                 </div>
+            </div>
+        </div>        
+
+        <div class="w-full flex flex-col bg-black pt-28 pb-28">
+            <div class="container mx-auto visible xl:hidden px-5">
+                <div class="w-full flex justify-center bg-grey">
+                    <nuxt-img
+                        format="webp"
+                        class="object-contain"
+                        :src="steam1"
+                        alt="Steam 1"
+                        fetchpriority="low"
+                        width="250"
+                        height="181"
+                        blur-up
+                        quality="80"
+                         />
+
+                    <nuxt-img
+                        format="webp"
+                        class="object-contain"
+                        :src="steam2"
+                        alt="Steam 2"
+                        fetchpriority="low"
+                        width="157"
+                        height="144"
+                        blur-up
+                        quality="80"
+                         />
+
+                    <nuxt-img
+                        format="webp"
+                        class="object-contain"
+                        :src="steam3"
+                        alt="Steam 3"
+                        fetchpriority="low"
+                        width="195"
+                        height="209"
+                        blur-up
+                        quality="80"
+                         />
+                </div>
+
+                <div class="w-full bg-white px-20 py-32 text-center">
+                    <h2 class="font-serif lg:text-7xl md:text-5xl text-4xl mb-16">Stem cell biology and Tissue Engineering</h2>
+                    <p class="text-xl">Stem cells can be self-replicating and differentiate into different cell types
+                        depending on their potency. Our group studies stem cell-based treatments and develop stem cell
+                        delivery technologies with or without the help of scaffolds mimicking the properties of the natural
+                        niche. We use human multipotent adipose mesenchymal stem cells (hASCs) as a clinically relevant
+                        source for tissue engineering but also as a model system for differentiation and signal
+                        transduction. We prepare 3D in vitro platforms using hASCs, spheroids, and organoids. Research
+                        activities include immunomodulation and wound healing. Creating models and substitutes using
+                        engineering approaches and xeno-free cell derivatives, designing directed differentiation protocols.
+                        Our efforts are also looking to identify the factors central to mediated regulation of angiogenesis,
+                        fibrosis, immune modulation, and epigenetics. We have a library of hASCs from over 200 different
+                        donors fully characterized and tested against pathogens, adventitious viruses, or zoonotic agents.
+                    </p>
                 </div>
             </div>
-        </div>
+
+            <div class="container hidden mx-auto xl:flex">
+                <div class="w-1/3 bg-grey h-auto">
+                    <div class="grid grid-cols-1 place-content-between h-full pt-36 pb-16">
+                        <div class="flex justify-center">
+                            <nuxt-img
+                                format="webp"
+                                class="object-contain"
+                                :src="steam1"
+                                alt="Steam 1"
+                                fetchpriority="low"
+                                width="250"
+                                height="181"
+                                blur-up
+                                quality="80"
+                                />
+                        </div>
+
+                        <div class="flex justify-center">
+                            <nuxt-img
+                                format="webp"
+                                class="object-contain"
+                                :src="steam2"
+                                alt="Steam 2"
+                                fetchpriority="low"
+                                width="157"
+                                height="144"
+                                blur-up
+                                quality="80"
+                                />
+                        </div>
+
+                        <div class="flex justify-center">
+                            <nuxt-img
+                                format="webp"
+                                class="object-contain"
+                                :src="steam3"
+                                alt="Steam 3"
+                                fetchpriority="low"
+                                width="195"
+                                height="209"
+                                blur-up
+                                quality="80"
+                                />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-2/3 bg-white px-20 py-32 text-center">
+                    <h2 class="font-serif lg:text-7xl md:text-5xl text-4xl mb-16">Stem cell biology and Tissue Engineering</h2>
+                    <p class="text-xl">Stem cells can be self-replicating and differentiate into different cell types
+                        depending on their potency. Our group studies stem cell-based treatments and develop stem cell
+                        delivery technologies with or without the help of scaffolds mimicking the properties of the natural
+                        niche. We use human multipotent adipose mesenchymal stem cells (hASCs) as a clinically relevant
+                        source for tissue engineering but also as a model system for differentiation and signal
+                        transduction. We prepare 3D in vitro platforms using hASCs, spheroids, and organoids. Research
+                        activities include immunomodulation and wound healing. Creating models and substitutes using
+                        engineering approaches and xeno-free cell derivatives, designing directed differentiation protocols.
+                        Our efforts are also looking to identify the factors central to mediated regulation of angiogenesis,
+                        fibrosis, immune modulation, and epigenetics. We have a library of hASCs from over 200 different
+                        donors fully characterized and tested against pathogens, adventitious viruses, or zoonotic agents.
+                    </p>
+                </div>
+            </div>
+        </div>        
     </div>
 </template>
   
 <script>
-const micro1 = require('~/assets/micro1.webp');
-const micro2 = require('~/assets/micro2.webp');
-const manufacturing1 = require('~/assets/manufacturing1.webp');
-const manufacturing2 = require('~/assets/manufacturing2.webp');
+const micro1 = '/micro1.webp';
+const micro2 = '/micro2.webp';
+const manufacturing1 = '/manufacturing1.webp';
+const manufacturing2 = '/manufacturing2.webp';
+const manufacturing3 = '/manufacturing3.png';
+const steam1 = '/steam1.png';
+const steam2 = '/steam2.webp';
+const steam3 = '/steam3.webp';
 
 export default {
     name: "Research",
@@ -147,6 +375,10 @@ export default {
             micro2,
             manufacturing1,
             manufacturing2,
+            manufacturing3,
+            steam1,
+            steam2,
+            steam3,
         }
     }
 };
