@@ -4,28 +4,27 @@
     <div class="flex container mx-auto justify-between pb-10 md:pb-14 pl-3">
       <div class="flex-1 grid grid-cols-3 h-6 text-white">
         <div class="pt-4">
-          <!-- <div class="invisible md:visible">logo lg</div> -->
-          <a title="Escobedo Lucea Biomaterial and Tissue Engineering Lab" href="/" target="_self">
+          <nuxt-link :to="`/${$router.options.base}`" title="Escobedo Lucea Biomaterial and Tissue Engineering Lab" target="_self">
             <nuxt-img
               class="invisible xl:visible w-64 h-auto"
               format="webp"
               src="/logo_blanco.png"
               alt="Escobedo Lucea Biomaterial and Tissue Engineering Lab logo 2" />
-          </a>
+          </nuxt-link>
         </div>
+
         <div class="flex flex-row justify-self-center pt-2">
-          <!-- <div class="visible md:invisible">logo tablet</div> -->
-          <a title="Escobedo Lucea Biomaterial and Tissue Engineering Lab" href="/" target="_self">
+          <nuxt-link :to="`/${$router.options.base}`" title="Escobedo Lucea Biomaterial and Tissue Engineering Lab" target="_self">
             <nuxt-img
               class="visible xl:invisible w-64 h-auto"
               format="webp"
               src="/logo_blanco.png"
               alt="Escobedo Lucea Biomaterial and Tissue Engineering Lab logo" />
-            <!-- <img class="visible xl:invisible w-64 h-auto" src="~assets/logo_blanco.png"
-              alt="Escobedo Lucea Biomaterial and Tissue Engineering Lab logo" /> -->
-          </a>
+            </nuxt-link>
         </div>
+
         <div class="flex flex-row justify-self-end">
+          
           <div class="flex flex-col visible xl:hidden w-34" ref="menu">
             <div class="flex justify-end w-30">
               <button
@@ -40,20 +39,13 @@
             </div>
 
             <div class="xl:hidden w-30 ml-4" v-show="showMenu">
-              <a title="Home" href="/"
-                class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Home</a>
-              <a title="About Section" href="/#about"
-                class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">About</a>
-              <a title="Team Section" href="/#team"
-                class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Team</a>
-              <a title="Research Section" href="/research"
-                class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Research</a>
-              <a title="Projects Section" href="/projects"
-                class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Projects</a>
-              <a title="Adwards Section" href="/awards"
-                class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Adwards</a>
-              <a title="Publications Section" href="/publications"
-                class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Publications</a>
+              <nuxt-link :to="`/${$router.options.base}`" title="Home" class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Home</nuxt-link>
+              <nuxt-link :to="`/${$router.options.base}#about`" title="About" class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">About</nuxt-link>
+              <nuxt-link :to="`/${$router.options.base}#team`" title="Team" class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Team</nuxt-link>
+              <nuxt-link :to="`/${$router.options.base}research`" title="Research" class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Research</nuxt-link>
+              <nuxt-link :to="`/${$router.options.base}projects`" title="Projects" class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Projects</nuxt-link>
+              <nuxt-link :to="`/${$router.options.base}awards`" title="Awards" class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Awards</nuxt-link>
+              <nuxt-link :to="`/${$router.options.base}publications`" title="Publications" class="block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Publications</nuxt-link>
               <a title="Google Maps Link" href="https://www.google.com/maps?cid=3154699187674670345" target="_blank" class="flex justify-center px-2 py-2 bg-black text-black border-b-2 border-black text-center align-middle ">
                 <nuxt-img
                   class="w-6 h-6 bg-black"
@@ -61,19 +53,32 @@
                   src="/map.webp"
                   alt="Google Map Link"
                   fetchpriority="high" />
-                <!-- <img class="w-6 h-6 bg-black" alt="Google Map" fetchpriority="high" src="~assets/map.webp" /> -->
               </a>
             </div>
           </div>
 
           <div class="hidden xl:flex space-x-3 text-xl">
-            <div><a title="Home" href="/">Home</a></div>
-            <div><a title="About Section" href="/#about">About</a></div>
-            <div><a title="Team Section" href="/#team">Team</a></div>
-            <div><a title="Research Section" href="/research">Research</a></div>
-            <div><a title="Projects Section" href="/projects">Projects</a></div>
-            <div><a title="Adwards Section" href="/awards">Awards</a></div>
-            <div><a title="Publications Section" href="/publications">Publications</a></div>
+            <div>
+              <nuxt-link :to="`/${$router.options.base}`" title="Home">Home</nuxt-link>
+            </div>
+            <div>
+              <nuxt-link :to="`/${$router.options.base}#about`" title="About">About</nuxt-link>
+            </div>
+            <div>
+              <nuxt-link :to="`/${$router.options.base}#team`" title="Team">Team</nuxt-link>
+            </div>
+            <div>
+              <nuxt-link :to="`/${$router.options.base}research`" title="Research">Research</nuxt-link>
+            </div>
+            <div>
+              <nuxt-link :to="`/${$router.options.base}projects`" title="Projects">Projects</nuxt-link>
+            </div>
+            <div>
+              <nuxt-link :to="`/${$router.options.base}awards`" title="Awards">Awards</nuxt-link>
+            </div>
+            <div>
+              <nuxt-link :to="`/${$router.options.base}publications`" title="Publications">Publications</nuxt-link>
+            </div>
             <div class="w-10">
               <a title="Google Maps Link" href="https://www.google.com/maps?cid=3154699187674670345" target="_blank">
                 <nuxt-img
@@ -82,9 +87,6 @@
                   src="/map.webp"
                   alt="Google Map Link"
                   fetchpriority="high" />
-
-                <!-- <nuxt-img class="w-6 h-6 bg-cover" alt="Google Map" fetchpriority="high" src="~assets/map.webp" /> -->
-                <!-- <img class="w-6 h-6 bg-cover" alt="Google Map" fetchpriority="high" src="~assets/map.webp" /> -->
               </a>
             </div>
           </div>
@@ -97,9 +99,6 @@
 <script>
 export default {
   name: "Nav",
-  /* components: {
-    'nuxt-image': '@nuxt/image',
-  }, */
   data() {
     return {
       showMenu: false,
