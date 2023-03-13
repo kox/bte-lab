@@ -9,6 +9,7 @@ module.exports = {
       },
       minHeight: {
         '0': '0',
+        '1/5': '20%',
         '1/4': '25%',
         '1/2': '50%',
         '3/4': '75%',
@@ -50,7 +51,10 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  content: ['./src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js'],
+  plugins: [
+    require('tw-elements/dist/plugin'),
+  ],
   // These paths are just examples, customize them to match your project structure
   purge: [
     // './public/**/*.html',
