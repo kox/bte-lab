@@ -45,7 +45,20 @@ module.exports = {
       animation: {
         'fade-in': 'fade-in 2s ease-out',
         'fade-out-down': 'fade-out-down 6s ease-out',
-      }
+      },
+      fontFamily: {
+        'raleway': ['Raleway', 'sans-serif'],
+        'futura': ['Futura-LT-W01-Book', 'sans-serif'],
+        'avenir': ['Avenir-LT-Light', 'sans-serif'],
+        'avenir2': ['Avenir-LT-W05_35-Light', 'Avenir-LT-Light', 'sans-serif'],
+      },
+      color: {
+        'corvid': 'rgb(225, 239, 242)',
+      },
+      letterSpacing: {
+        'bit': '0.05em',
+        'mid': '0.15em',
+      },
     },
   },
   variants: {
