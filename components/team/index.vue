@@ -1,9 +1,9 @@
 <template>
     <div>
         <div class="w-full flex flex-col bg-black pt-72 pb-28">
-            <div class="container mx-auto md:w-2/3 px-4 md:px-0">
+            <div class="mx-auto md:w-4/5 px-4 md:px-0">
                 <div class="flex flex-col text-center text-white">
-                    <h2 class="text-6xl md:text-7xl font-semibold pb-10 tracking-tight" id="team">TEAM</h2>
+                    <h2 class="font-futura text-4xl md:text-5xl font-semibold pb-10 tracking-mid" id="team">TEAM</h2>
                 </div>
 
                 <div class="grid  grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
@@ -31,9 +31,9 @@
                 </div>
             </div>
 
-            <div class="container mx-auto md:w-2/3 px-4 md:px-0 pt-10 md:pt-16">
+            <div class="mx-auto md:w-4/5 px-4 md:px-0 pt-10 md:pt-16">
                 <div class="flex flex-col text-center text-white">
-                    <h2 class="text-3xl md:text-5xl font-semibold pb-10 tracking-tight">PhD Candidates</h2>
+                    <h2 class="font-futura text-3xl md:text-4xl font-semibold pb-10 tracking-mid">PhD Candidates</h2>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
@@ -61,9 +61,9 @@
                 </div>
             </div>
 
-            <div class="container mx-auto md:w-2/3 px-4 md:px-0 pt-10 md:pt-16">
+            <div class="mx-auto md:w-4/5 px-4 md:px-0 pt-10 md:pt-16">
                 <div class="flex flex-col text-center text-white">
-                    <h2 class="text-3xl md:text-5xl font-semibold pb-10 tracking-tight">Graduates</h2>
+                    <h2 class="font-futura text-3xl md:text-4xl font-semibold pb-10 tracking-mid">Graduates</h2>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
@@ -92,9 +92,9 @@
                     </div>
                 </div>
             </div>
-            <div class="container mx-auto md:w-2/3 px-4 md:px-0 pt-10 md:pt-16">
+            <div class="mx-auto md:w-4/5 px-4 md:px-0 pt-10 md:pt-16">
                 <div class="flex flex-col text-center text-white">
-                    <h2 class="text-3xl md:text-5xl font-semibold pb-10 tracking-tight">Collaborators</h2>
+                    <h2 class="font-futura text-3xl md:text-4xl font-semibold pb-10 tracking-mid">Collaborators</h2>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
