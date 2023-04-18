@@ -2,8 +2,10 @@
 <template>
     <div class="flex flex-col w-full bg-back">
       <Nav />
+
       <Publications />
-      <Footer />
+      
+      <FooterBlank />
     </div>
   </template>
   

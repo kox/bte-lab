@@ -7,7 +7,7 @@
 
     <ContactForm />
 
-    <Footer />
+    <FooterBlank />
   </div>
 </template>
   

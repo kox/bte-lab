@@ -1,31 +1,29 @@
 <template>
     <div class="w-full bg-black pb-10">
         <div class="container mx-auto ">
-            <div class="carousel-container container overflow-hidden">
-                <slick class="relative" ref="slick" :options="slickOptions">
+            <div class="carousel-container container overflow-hidden" >
+                <slick class="relative" ref="slick" :options="slickOptions" dir="rtl">
 
                     <nuxt-img
                         format="webp"
                         src="/hospital1600px.png"
                         alt="Hospital General Universitario de Valencia"
                         fetchpriority="low"
-                        width="1600"
-                        height="800"
-                        blur-up
-                        quality="80"
+                        width="980"
+                        height="auto"
+                        quality="100"
                         style="object-fit: scale-down;"
                          />
                     
-                    <nuxt-img
+                     <nuxt-img
                         format="webp"
                         src="/fotogrupo-1600px.png"
                         alt="BTE Lab team photo"
                         fetchpriority="low" 
-                        width="1600"
-                        height="800"
-                        blur-up
-                        quality="80"
-                        style="object-fit: contain;"
+                        width="980"
+                        height="auto"
+                        quality="100"
+                        style="object-fit: scale-down;"
                         />
                         
                     <nuxt-img
@@ -33,11 +31,10 @@
                         src="/valencia1600px.png"
                         alt="Science Museum in Valencia"
                         fetchpriority="low" 
-                        width="1600"
-                        height="800"
-                        blur-up
-                        quality="80"
-                        style="object-fit: contain;"
+                        width="980"
+                        height="auto"
+                        quality="100"
+                        style="object-fit: scale-down;"
                         />
                         
                     <!--
@@ -81,12 +78,13 @@ export default {
                 nextArrow: null,
                 autoplay: true,
                 slidesToShow: 1,
-                autoplaySpeed: 1000,
+                autoplaySpeed: 1100,
                 adaptiveHeight: true,
                 dots: false,
-                speed: 500,
-                fade: true,
-                cssEase: 'linear',
+                speed: 1100,
+                // fade: true,
+                cssEase: 'ease',
+                rtl: true
             },
         };
     }

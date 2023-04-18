@@ -4,6 +4,8 @@
       <Nav />
       
       <Projects />
+
+      <FooterBlank />
     </div>
   </template>
   
