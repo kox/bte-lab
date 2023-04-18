@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <div id="team">
         <div class="w-full flex flex-col bg-black pt-72 pb-28">
             <div class="mx-auto md:w-4/5 px-4 md:px-0">
                 <div class="flex flex-col text-center text-white">
-                    <h2 class="font-futura text-4xl md:text-5xl font-semibold pb-10 tracking-mid" id="team">TEAM</h2>
+                    <h2 class="font-futura text-4xl md:text-5xl font-semibold pb-16 tracking-mid">TEAM</h2>
                 </div>
 
                 <div class="grid  grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
