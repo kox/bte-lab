@@ -40,19 +40,19 @@
             </div>
 
             <div class="xl:hidden w-30 ml-4 text-sm tracking-bit" v-show="showMenu">
-              <a title="Home" href="/"
+              <a title="Home" href="/bte-lab/"
                 class="font-avenir text-sm block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Home</a>
-              <a title="About Section" href="/#about"
+              <a title="About Section" href="/bte-lab/#about"
                 class="font-avenir block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">About</a>
-              <a title="Team Section" href="/#team"
+              <a title="Team Section" href="/bte-lab/#team"
                 class="font-avenir block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Team</a>
-              <a title="Research Section" href="/research"
+              <a title="Research Section" href="/bte-lab/research"
                 class="font-avenir block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Research</a>
-              <a title="Projects Section" href="/projects"
+              <a title="Projects Section" href="/bte-lab/projects"
                 class="font-avenir block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Projects</a>
-              <a title="Adwards Section" href="/awards"
+              <a title="Adwards Section" href="/bte-lab/awards"
                 class="font-avenir block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Adwards</a>
-              <a title="Publications Section" href="/publications"
+              <a title="Publications Section" href="/bte-lab/publications"
                 class="font-avenir block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Publications</a>
                 <a title="Google Maps Link" href="https://www.google.com/maps?cid=3154699187674670345" target="_blank" class="flex justify-center px-2 py-2 bg-black text-black border-b-2 border-black text-center align-middle ">
                   <nuxt-img
@@ -62,20 +62,26 @@
                   alt="Google Map Link"
                   fetchpriority="high" />
                 </a>
-                <a title="Contact Section" href="/#contact"
+                <a title="Contact Section" href="/bte-lab/#contact"
                   class="font-avenir block px-2 py-2 bg-white text-black border-b-2 border-black text-center hover:bg-black hover:text-white hover:border-white hover:border-2">Contact</a>
               
             </div>
           </div>
 
           <div class="hidden xl:flex text-sm tracking-bit">
-            <div><a class="mx-2.5 font-avenir color-corvid" title="Home" href="/">Home</a></div>
-            <div><a class="mx-2.5 font-avenir color-corvid" title="About Section" href="/#about">About</a></div>
+            <div><a class="mx-2.5 font-avenir color-corvid" title="Home" href="/bte-lab/">Home</a></div>
+            <div><a class="mx-2.5 font-avenir color-corvid" title="About Section" href="/bte-lab/#about">About</a></div>
+            <div><a class="mx-2.5 font-avenir color-corvid" title="Team Section" href="/bte-lab/#team">Team</a></div>
+            <div><a class="mx-2.5 font-avenir color-corvid" title="Research Section" href="/bte-lab/research">Research</a></div>
+            <div><a class="mx-2.5 font-avenir color-corvid" title="Projects Section" href="/bte-lab/projects">Projects</a></div>
+            <div><a class="mx-2.5 font-avenir color-corvid" title="Adwards Section" href="/bte-lab/awards">Awards</a></div>
+            <div><a class="mx-2.5 font-avenir color-corvid" title="Publications Section" href="/bte-lab/publications">Publications</a></div>
+            <!-- <div><a class="mx-2.5 font-avenir color-corvid" title="About Section" href="/#about">About</a></div>
             <div><a class="mx-2.5 font-avenir color-corvid" title="Team Section" href="/#team">Team</a></div>
             <div><a class="mx-2.5 font-avenir color-corvid" title="Research Section" href="/research">Research</a></div>
             <div><a class="mx-2.5 font-avenir color-corvid" title="Projects Section" href="/projects">Projects</a></div>
             <div><a class="mx-2.5 font-avenir color-corvid" title="Adwards Section" href="/awards">Awards</a></div>
-            <div><a class="mx-2.5 font-avenir color-corvid" title="Publications Section" href="/publications">Publications</a></div>
+            <div><a class="mx-2.5 font-avenir color-corvid" title="Publications Section" href="/publications">Publications</a></div> -->
             <div class="w-10 ml-2 font-avenir color-corvid">
               <a title="Google Maps Link" href="https://www.google.com/maps?cid=3154699187674670345" target="_blank">
                 <nuxt-img
@@ -86,7 +92,7 @@
                   fetchpriority="high" />
               </a>
             </div>
-            <div><a class="mx-2.5 font-avenir color-corvid" title="Contact" href="/#contact">Contact</a></div>
+            <div><a class="mx-2.5 font-avenir color-corvid" title="Contact" href="/bte-lab/#contact">Contact</a></div>
           </div>
         </div>
       </div>
