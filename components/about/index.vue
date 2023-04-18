@@ -1,8 +1,11 @@
 <template>
+    <div id="about">
+
+    
     <div class="w-full flex flex-col bg-black pt-72 pb-28">
         <div class="container mx-auto w-2/3">
             <div class="flex flex-col text-center text-white">
-                <h2 class="font-futura text-4xl font-semibold md:text-5xl pb-10" id="about">ABOUT BTELab</h2>
+                <h2 class="font-futura text-4xl font-semibold md:text-5xl pb-10">ABOUT BTELab</h2>
                 <p class="w-full pb-5 text-justify">
                     <div class="font-avenir leading-loose pb-7 md:w-2/3  mx-auto text-justify">
                         The BTELab is a multidisciplinary team based at the Research Foundation of the General Hospital in
@@ -19,6 +22,7 @@
                 </p>
             </div>
         </div>
+    </div>
 </div>
 </template>
 <script>
