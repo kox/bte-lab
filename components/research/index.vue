@@ -31,8 +31,8 @@
                 </div>
 
                 <div class="w-full bg-white px-20 py-32 text-center">
-                    <h1 class="font-serif lg:text-7xl md:text-5xl text-4xl mb-16">Microfabrication and OOC</h1>
-                    <p class="text-xl">Organ-on-a-chip (OoC) platforms seek to recapitulate certain aspects of human organ physiology at a microscopic scale by integrating microfluidics and three-dimensional (3D) models of human tissues. OoCs offer a vast number of applications in almost every aspect of the human anatomy. For instance, OoCs will be able to provide accurate and reliable predictions of the effects of drugs and toxins on human bodies in the near future. Nowadays, we are working on developing personalized physiological models that we hope will be used as a versatile platform to develop more precise medical therapies. Our research efforts are also focused on observing the essential functions of cells and the interactions between the input and output, which will also be crucial for reducing the experimental work on animal models, alined with the principles of the 3Rs (Replacement, Reduction and Refinement).</p>
+                    <h1 class="font-raleway font-semibold lg:text-7xl md:text-4xl text-3xl mb-16">Microfabrication and OOC</h1>
+                    <p class="font-avenir px-24 font-sm text-base tracking-mid leading-6">Organ-on-a-chip (OoC) platforms seek to recapitulate certain aspects of human organ physiology at a microscopic scale by integrating microfluidics and three-dimensional (3D) models of human tissues. OoCs offer a vast number of applications in almost every aspect of the human anatomy. For instance, OoCs will be able to provide accurate and reliable predictions of the effects of drugs and toxins on human bodies in the near future. Nowadays, we are working on developing personalized physiological models that we hope will be used as a versatile platform to develop more precise medical therapies. Our research efforts are also focused on observing the essential functions of cells and the interactions between the input and output, which will also be crucial for reducing the experimental work on animal models, alined with the principles of the 3Rs (Replacement, Reduction and Refinement).</p>
                 </div>
             </div>
 
@@ -68,8 +68,8 @@
                 </div>
 
                 <div class="w-2/3 bg-white px-20 py-32 text-center">
-                    <h1 class="font-serif lg:text-7xl md:text-5xl text-4xl mb-16">Microfabrication and OOC</h1>
-                    <p class="text-xl">Organ-on-a-chip (OoC) platforms seek to recapitulate certain aspects of human organ physiology at a microscopic scale by integrating microfluidics and three-dimensional (3D) models of human tissues. OoCs offer a vast number of applications in almost every aspect of the human anatomy. For instance, OoCs will be able to provide accurate and reliable predictions of the effects of drugs and toxins on human bodies in the near future. Nowadays, we are working on developing personalized physiological models that we hope will be used as a versatile platform to develop more precise medical therapies. Our research efforts are also focused on observing the essential functions of cells and the interactions between the input and output, which will also be crucial for reducing the experimental work on animal models, alined with the principles of the 3Rs (Replacement, Reduction and Refinement).</p>
+                    <h1 class="font-raleway font-thin lg:text-5xl md:text-4xl text-3xl mb-16">Microfabrication and OOC</h1>
+                    <p class="font-avenir px-24 font-sm text-base tracking-mid leading-6">Organ-on-a-chip (OoC) platforms seek to recapitulate certain aspects of human organ physiology at a microscopic scale by integrating microfluidics and three-dimensional (3D) models of human tissues. OoCs offer a vast number of applications in almost every aspect of the human anatomy. For instance, OoCs will be able to provide accurate and reliable predictions of the effects of drugs and toxins on human bodies in the near future. Nowadays, we are working on developing personalized physiological models that we hope will be used as a versatile platform to develop more precise medical therapies. Our research efforts are also focused on observing the essential functions of cells and the interactions between the input and output, which will also be crucial for reducing the experimental work on animal models, alined with the principles of the 3Rs (Replacement, Reduction and Refinement).</p>
                 </div>
             </div>
         </div>
@@ -118,7 +118,7 @@
 
                 <div class="w-full bg-white px-20 py-32 text-center">
                     <h2 class="font-serif lg:text-7xl md:text-5xl text-4xl mb-16">Additive manufacturing and 3D bioprinting</h2>
-                    <p class="text-xl">3D bioprinting is an emerging technology that can spatially control the construction
+                    <p class="font-avenir px-24 font-sm text-base tracking-mid leading-6">3D bioprinting is an emerging technology that can spatially control the construction
                         process of engineered tissues. The BTELab focuses on controlling the printed constructs'
                         architecture, morphology, and biological properties to generate 3D platforms that reproduce their
                         human equivalents fairly. Our latest works show an improvement in this technology for different
@@ -133,10 +133,10 @@
                         <li>Drug sensitivity tests</li>
                         <li>Drug development</li>
                     </ul>
-                    <p class="text-xl">We are developing broad collaborations with various stakeholders to investigate other
+                    <p class="font-avenir px-24 font-sm text-base tracking-mid leading-6">We are developing broad collaborations with various stakeholders to investigate other
                         potential avenues of investigation and treatment.</p>
                     <h3 class="font-serif text-2xl mb-4 mt-10">3D PRINTING IN CLINICS</h3>
-                    <p class="text-xl">We are interested in applying 3D printing techniques in clinical contexts to create
+                    <p class="font-avenir px-24 font-sm text-base tracking-mid leading-6">We are interested in applying 3D printing techniques in clinical contexts to create
                         realistic and anatomically precise 3D printed models generated from medical images for surgery
                         planning, training, and teaching applications. Together with other medical departments and hospital
                         services, we have started a pioneer work to provide them with these complex and personalized 3D
@@ -199,8 +199,8 @@
                 </div>
 
                 <div class="w-2/3 bg-white px-20 py-32 text-center">
-                    <h2 class="font-serif lg:text-7xl md:text-5xl text-4xl mb-16">Additive manufacturing and 3D bioprinting</h2>
-                    <p class="text-xl">3D bioprinting is an emerging technology that can spatially control the construction
+                    <h2 class="font-raleway font-thin lg:text-5xl md:text-4xl text-3xl mb-16">Additive manufacturing and 3D bioprinting</h2>
+                    <p class="font-avenir px-24 font-sm text-base tracking-mid leading-6">3D bioprinting is an emerging technology that can spatially control the construction
                         process of engineered tissues. The BTELab focuses on controlling the printed constructs'
                         architecture, morphology, and biological properties to generate 3D platforms that reproduce their
                         human equivalents fairly. Our latest works show an improvement in this technology for different
@@ -209,16 +209,17 @@
                         enables the control of the process from the early stage of machine design to cell preparation, which
                         allows us to adapt the 3D printers to the specific needs of different projects and research
                         lines.<br />The main applications of our bioprinted constructs in the lab are the following:</p>
-                    <ul class="list-inside list-disc text-xl align-center">
+                    <ul class="font-avenir list-inside list-disc  font-sm text-base align-center my-3 tracking-mid">
                         <li>Study of tissue and organ regeneration</li>
                         <li>Explore mechanisms of diseases</li>
                         <li>Drug sensitivity tests</li>
                         <li>Drug development</li>
                     </ul>
-                    <p class="text-xl">We are developing broad collaborations with various stakeholders to investigate other
+                    <p class="font-avenir px-24 font-sm text-base tracking-mid leading-6">We are developing broad collaborations with various stakeholders to investigate other
                         potential avenues of investigation and treatment.</p>
-                    <h3 class="font-serif text-2xl mb-4 mt-10">3D PRINTING IN CLINICS</h3>
-                    <p class="text-xl">We are interested in applying 3D printing techniques in clinical contexts to create
+
+                    <h3 class="font-serif text-xl mb-4 mt-10">3D PRINTING IN CLINICS</h3>
+                    <p class="font-avenir px-24 font-sm text-base tracking-mid leading-6">We are interested in applying 3D printing techniques in clinical contexts to create
                         realistic and anatomically precise 3D printed models generated from medical images for surgery
                         planning, training, and teaching applications. Together with other medical departments and hospital
                         services, we have started a pioneer work to provide them with these complex and personalized 3D
@@ -274,7 +275,7 @@
 
                 <div class="w-full bg-white px-20 py-32 text-center">
                     <h2 class="font-serif lg:text-7xl md:text-5xl text-4xl mb-16">Stem cell biology and Tissue Engineering</h2>
-                    <p class="text-xl">Stem cells can be self-replicating and differentiate into different cell types
+                    <p class="font-avenir px-24 font-sm text-base tracking-mid leading-6">Stem cells can be self-replicating and differentiate into different cell types
                         depending on their potency. Our group studies stem cell-based treatments and develop stem cell
                         delivery technologies with or without the help of scaffolds mimicking the properties of the natural
                         niche. We use human multipotent adipose mesenchymal stem cells (hASCs) as a clinically relevant
@@ -337,8 +338,8 @@
                 </div>
 
                 <div class="w-2/3 bg-white px-20 py-32 text-center">
-                    <h2 class="font-serif lg:text-7xl md:text-5xl text-4xl mb-16">Stem cell biology and Tissue Engineering</h2>
-                    <p class="text-xl">Stem cells can be self-replicating and differentiate into different cell types
+                    <h2 class="font-raleway font-thin lg:text-5xl md:text-4xl text-3xl mb-16">Stem cell biology and Tissue Engineering</h2>
+                    <p class="font-avenir px-24 font-sm text-base tracking-mid leading-6">Stem cells can be self-replicating and differentiate into different cell types
                         depending on their potency. Our group studies stem cell-based treatments and develop stem cell
                         delivery technologies with or without the help of scaffolds mimicking the properties of the natural
                         niche. We use human multipotent adipose mesenchymal stem cells (hASCs) as a clinically relevant
