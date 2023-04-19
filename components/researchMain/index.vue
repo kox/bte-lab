@@ -12,7 +12,7 @@
                         MICROFABRICATION AND<br />ORGAN-ON-A-CHIP</h4>
                     <div class="w-full text-center h-20 pb-36 md:pb-0">
                         <router-link to="/research"
-                            class="font-avenir inline-block text-sm px-4 py-4 leading-none border rounded text-white border-white hover:text-black hover:bg-white hover:border-black hover:no-underline transition-all duration-200 ease-in-out mt-4 lg:mt-0">
+                            class="font-avenir inline-block text-sm px-12 py-4 leading-none border text-white border-white hover:text-black hover:bg-greygreen hover:border-black hover:no-underline transition-all duration-200 ease-in-out mt-4 lg:mt-0">
                             More
                         </router-link>
                     </div>
@@ -23,7 +23,7 @@
                         BIOPRINTING<br />AND ADDITIVE<br />MANUFACTURING</h4>
                     <div class="w-full text-center h-20 pb-36 md:pb-0">
                         <router-link to="/research#bioprinting"
-                            class="font-avenir inline-block text-sm px-4 py-4 leading-none border rounded text-white border-white hover:text-black hover:bg-white hover:border-black hover:no-underline transition-all duration-200 ease-in-out mt-4 lg:mt-0">
+                            class="font-avenir inline-block text-sm px-12 py-4 leading-none border text-white border-white hover:text-black hover:bg-greygreen hover:border-black hover:no-underline transition-all duration-200 ease-in-out mt-4 lg:mt-0">
                             More
                         </router-link>
                     </div>
@@ -34,7 +34,7 @@
                         BIOLOGY AND<br />TISSUE ENGINEERING</h4>
                     <div class="w-full text-center h-20 pb-36 md:pb-0">
                         <router-link to="/research#stem-cell"
-                            class="font-avenir inline-block text-sm px-4 py-4 leading-none border rounded text-white border-white hover:text-black hover:bg-white hover:border-black hover:no-underline transition-all duration-200 ease-in-out mt-4 lg:mt-0">
+                            class="font-avenir inline-block text-sm px-12 py-4 leading-none border text-white border-white hover:text-black hover:bg-greygreen hover:border-black hover:no-underline transition-all duration-200 ease-in-out mt-4 lg:mt-0">
                             More
                         </router-link>
                     </div>

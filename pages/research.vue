@@ -6,8 +6,6 @@
 
     <Research />
 
-    <ContactForm />
-
     <FooterBlank />
   </div>
 </template>
