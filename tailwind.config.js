@@ -52,8 +52,9 @@ module.exports = {
         'avenir': ['Avenir-LT-Light', 'sans-serif'],
         'avenir2': ['Avenir-LT-W05_35-Light', 'Avenir-LT-Light', 'sans-serif'],
       },
-      color: {
+      colors: {
         'corvid': 'rgb(225, 239, 242)',
+        'greygreen': '#B6CACB',
       },
       letterSpacing: {
         'bit': '0.05em',
