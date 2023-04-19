@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col bg-white">
         <div class="flex flex-col container mx-auto pt-20 pb-20">
-            <h1 class="w-full flex justify-center text-6xl pb-4 font-light">Awards</h1>
+            <h1 class="w-full flex justify-center text-6xl pb-4 font-raleway">Awards</h1>
             <div class="flex flex-1 w-full justify-center ">
                 <div class="title-line bg-black"></div>
             </div>
