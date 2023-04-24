@@ -12,13 +12,13 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="w-80 h-80 bg-grey-green transition duration-500 hover:bg-gray-500">
                         <div class="h-full w-full flex items-center justify-center text-center">
-                            <span class="text-5xl font-bold">VALBIOCAR</span>
+                            <span class="font-raleway text-5xl">VALBIOCAR</span>
 
                         </div>
                     </div>
                     <div class="w-80 h-80 bg-grey-green transition duration-500 hover:bg-gray-500">
                         <div class="h-full w-full flex items-center justify-center text-center">
-                            <span class="text-5xl font-bold">BIOEVOOC</span>
+                            <span class="font-raleway text-5xl">BIOEVOOC</span>
 
                         </div>
                     </div>
