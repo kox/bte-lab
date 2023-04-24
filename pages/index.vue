@@ -13,6 +13,8 @@
 
     <Team />
 
+    <Instagram />
+
     <ContactForm />
 
     <Map />
