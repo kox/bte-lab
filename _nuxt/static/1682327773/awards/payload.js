@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/awards", {data:[{_img:{"/bte-lab/_ipx/f_webp/logo_blanco.png":"\u002Fbte-lab\u002F_nuxt\u002Fimage\u002F4d6ad6.webp","/bte-lab/_ipx/f_webp/map.webp":"\u002Fbte-lab\u002F_nuxt\u002Fimage\u002F356962.webp"}}],fetch:{},mutations:void 0});
