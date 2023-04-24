@@ -24,8 +24,13 @@ export default {
     '~/assets/css/main.css',
   ],
 
+  env: {
+    instagramAccessToken: process.env.INSTAGRAM_ACCESS_TOKEN
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/scroll-to-top.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
