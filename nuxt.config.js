@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -24,8 +26,13 @@ export default {
     '~/assets/css/main.css',
   ],
 
+  env: {
+    instagramAccessToken: process.env.INSTAGRAM_ACCESS_TOKEN
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/scroll-to-top.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -69,6 +76,10 @@ export default {
     'postcss-nested': {},
     'postcss-responsive-type': {},
     'postcss-hexrgba': {}
+  },
+
+  publicRuntimeConfig: {
+    instagramAccessToken: process.env.INSTAGRAM_ACCESS_TOKEN || "none"
   },
 
   router: {
