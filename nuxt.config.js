@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -74,6 +76,10 @@ export default {
     'postcss-nested': {},
     'postcss-responsive-type': {},
     'postcss-hexrgba': {}
+  },
+
+  publicRuntimeConfig: {
+    instagramAccessToken: process.env.INSTAGRAM_ACCESS_TOKEN || "none"
   },
 
   router: {

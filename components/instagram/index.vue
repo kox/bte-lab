@@ -17,7 +17,7 @@
 export default {
     name: "Instagram",
     mounted() {
-        const instagramAccessToken = process.env.instagramAccessToken;
+        let instagramAccessToken = this.$config.instagramAccessToken;
 
         fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username&access_token=${instagramAccessToken}`)
             .then(response => response.json())
