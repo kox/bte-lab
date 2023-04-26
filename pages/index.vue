@@ -13,7 +13,7 @@
 
     <Team />
 
-    <Instagram />
+    <!-- <Instagram /> -->
 
     <ContactForm />
 
